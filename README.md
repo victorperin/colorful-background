@@ -10,7 +10,9 @@ This is a pre-release version of Colorful Background.
 
 ## Usage
 
+
 ## Settings
+
 
 ## Browsers
 
