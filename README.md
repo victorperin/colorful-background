@@ -8,6 +8,12 @@ A Colorful CSS Gradient Background Generator.
 
 This is a pre-release version of Colorful Background.
 
+## Usage
+
+## Settings
+
+## Browsers
+
 
 ## License
 Copyright (c) 2013 Web Core IT
