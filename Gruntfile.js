@@ -10,7 +10,11 @@ module.exports = function(grunt) {
 			},
 			website: {
 				options: {
-					jshintrc: 'src/website/.jshintrc'
+					"globals": {
+						"jQuery": true,
+					},
+						
+					"evil": true
 				},
 				src: ['src/website/js/*.js']
 			},
