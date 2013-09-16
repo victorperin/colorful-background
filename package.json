@@ -1,0 +1,19 @@
+{
+  "name": "colorful-background",
+  "description": "A Colorful CSS Gradient Background Generator.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/webcore-it/colorful-background",
+  "author": {
+    "name": "Thomas Zanthoff",
+    "url": "http://www.webcore-it.com",
+    "twitter": "@WebCoreIT",
+    "twitter-url": "https://twitter.com/WebCoreIT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gruntjs/grunt-init-commonjs-sample.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
