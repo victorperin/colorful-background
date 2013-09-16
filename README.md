@@ -1,7 +1,7 @@
 # colorful-background
 
 A Colorful CSS Gradient Background Generator. 
-[Here is the first preview](https://github.com/webcore-it/colorful-background/website/index.html)
+[Here is the first preview](https://http://webcore-it.github.io/colorful-background)
 
 
 ## Pre-Release (Not ready for usage)
