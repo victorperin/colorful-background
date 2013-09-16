@@ -14,6 +14,7 @@
     "url": "git://github.com/gruntjs/grunt-init-commonjs-sample.git"
   },
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1"
   }
 }
