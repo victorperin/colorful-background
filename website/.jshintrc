@@ -1,7 +1,0 @@
-{
-	"globals": {
-          "jQuery": true,
-        },
-        
-    "evil": true
-}
