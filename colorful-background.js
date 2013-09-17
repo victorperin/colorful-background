@@ -1,4 +1,4 @@
-/*! colorful-background 2013-09-16 */
+/*! colorful-background 2013-09-17 */
 function ColorfulBackgroundGenerator() {
 	this.layers = [];
 	

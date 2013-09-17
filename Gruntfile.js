@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 			},
 			src: {
 				src: '<%= pkg.name %>.js',
-				dest: '<%= pkg.name %>.min.js'
+				dest: '<%= pkg.name %>.min.js',
 			},
 			website: {
 				src: 'tmp/gen/script-all.js',
@@ -79,7 +79,14 @@ module.exports = function(grunt) {
 				'index.html':'src/website/index.html'
 				}
 			}
-		}
+		},
+		// ----------------------------------------------------------------------
+		copy: {
+			main: {
+				src: '<%= pkg.name %>.min.js',
+				dest: 'js/<%= pkg.name %>.min.js'
+			}
+		},
 	});
 
 	
@@ -88,10 +95,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	
 
 
 	// Default task(s).
-	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'htmlmin']);
+	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'htmlmin', 'copy']);
 
 };

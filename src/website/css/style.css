@@ -34,8 +34,6 @@ body {
 }
 
 
-
-
 h1
  {
     padding: 1em 0;
@@ -60,8 +58,6 @@ h1
     position:relative;
 }
 
-
-
 .button {
     text-decoration: none;
     font-size: 4em;
@@ -71,8 +67,9 @@ h1
     background: -o-radial-gradient(center, ellipse cover, rgba(247,247,247,1) 0,rgba(219,219,219,1) 100%);
     background: -ms-radial-gradient(center, ellipse cover, rgba(247,247,247,1) 0,rgba(219,219,219,1) 100%);
     background: radial-gradient(ellipse at center, rgba(247,247,247,1) 0,rgba(219,219,219,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#dbdbdb',GradientType=1 ); 
     
-    box-shadow: 0px 3px 8px #333, inset 0px 2px 3px #fff;
+    box-shadow: 0 3px 8px #333, inset 0 2px 3px #fff;
     line-height: 150px;
     width: 150px;
     height: 150px;
@@ -82,20 +79,23 @@ h1
     
     color: #909090;
 
-text-transform:uppercase;
+    text-transform:uppercase;
     text-shadow:0 1px 2px rgba(255,255,255,0.8);
-        -webkit-transition: color 200ms, background 400ms, box-shadow 250ms;
+    -o-transition: color 200ms, background 400ms, box-shadow 250ms;
+    -moz-transition: color 200ms, background 400ms, box-shadow 250ms;
+    -webkit-transition: color 200ms, background 400ms, box-shadow 250ms;
     transition: color 200ms, background 400ms, box-shadow 250ms;
 
 }
 
 .button:hover {
     color: #505050;
-    box-shadow: 0px 0px 15px 2px rgba(255, 255, 190, .6);
+    box-shadow: 0 0 15px 2px rgba(255, 255, 190, .6);
     background: -webkit-radial-gradient(center, ellipse cover, rgba(247,247,247,1) 0,rgba(239,239,239,1) 100%);
     background: -o-radial-gradient(center, ellipse cover, rgba(247,247,247,1) 0,rgba(239,239,239,1) 100%);
     background: -ms-radial-gradient(center, ellipse cover, rgba(247,247,247,1) 0,rgba(239,239,239,1) 100%);
     background: radial-gradient(ellipse at center, rgba(247,247,247,1) 0,rgba(239,239,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#efefef',GradientType=1 );
 }
 
 
@@ -114,6 +114,7 @@ text-transform:uppercase;
     background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 60%,rgba(0,0,0,0.05) 100%);
     background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 60%,rgba(0,0,0,0.05) 100%);
     background: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 60%,rgba(0,0,0,0.05) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0d000000',GradientType=1 );
     
 }
 
@@ -126,14 +127,13 @@ text-transform:uppercase;
     position: absolute;
 }
 
-.button-small.show-code {    
+.button-small.show-code {
     margin-top: 90px;
     margin-left: -50px;
     font-size: 1.3em;
 }
 
-.button-small:after {
-    
+.button-small:after {    
     width: 70px;
     height: 70px;
     margin-left: -10px;
@@ -155,7 +155,7 @@ pre {
     margin: 0 auto;
     padding: 10px;
     background: rgba(255, 255, 255, 0.2);
-    font-family: 'Ubuntu Mono', sans-serif;    
+    font-family: 'Ubuntu Mono', sans-serif;
 }
 
 code {
@@ -173,9 +173,10 @@ pre a:hover {
 }
 
 footer {
+
    position:fixed;
-   left:0px;
-   bottom:0px;
+   left:0;
+   bottom:0;
    height:30px;
    width:100%;
    
