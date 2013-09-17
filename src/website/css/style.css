@@ -146,7 +146,7 @@ h1
 }
 
 .code-box p {
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 pre {
@@ -159,7 +159,8 @@ pre {
 }
 
 code {
-    font-size: 0.8em;
+    font-size: 0.6em;
+    line-height: 1em;
 }
 
 pre a {
