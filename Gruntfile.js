@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 					"globals": {
 						"jQuery": true,
 					},
-						
+
 					"evil": true
 				},
 				src: ['src/website/js/*.js']
@@ -71,12 +71,12 @@ module.exports = function(grunt) {
 		// ----------------------------------------------------------------------
 		htmlmin: {
 			website: {
-				options: {                                 
-				removeComments: true,
-				collapseWhitespace: true
-			},
-			files:{
-				'index.html':'src/website/index.html'
+				options: {
+					removeComments: true,
+					collapseWhitespace: true
+				},
+				files: {
+					'index.html': 'src/website/index.html'
 				}
 			}
 		},
@@ -87,17 +87,20 @@ module.exports = function(grunt) {
 				dest: 'js/<%= pkg.name %>.min.js'
 			}
 		},
+		// ----------------------------------------------------------------------
+		watch: {
+			files: ['src/**/*', '!Gruntfile.js'],
+			tasks: ['default'],
+		},
 	});
 
-	
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	
-
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task(s).
 	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'htmlmin', 'copy']);

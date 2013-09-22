@@ -52,7 +52,19 @@ h1
     -webkit-font-smoothing: antialiased;
 }
 
-.controls{
+/*
+  ,ad8888ba,                                                        88                            88888888ba                                                                
+ d8"'    `"8b                          ,d                           88                  aa        88      "8b               ,d      ,d                                      
+d8'                                    88                           88                  88        88      ,8P               88      88                                      
+88             ,adPPYba,  8b,dPPYba, MM88MMM 8b,dPPYba,  ,adPPYba,  88 ,adPPYba,    aaaa88aaaa    88aaaaaa8P' 88       88 MM88MMM MM88MMM ,adPPYba,  8b,dPPYba,  ,adPPYba,  
+88            a8"     "8a 88P'   `"8a  88    88P'   "Y8 a8"     "8a 88 I8[    ""    """"88""""    88""""""8b, 88       88   88      88   a8"     "8a 88P'   `"8a I8[    ""  
+Y8,           8b       d8 88       88  88    88         8b       d8 88  `"Y8ba,         88        88      `8b 88       88   88      88   8b       d8 88       88  `"Y8ba,   
+ Y8a.    .a8P "8a,   ,a8" 88       88  88,   88         "8a,   ,a8" 88 aa    ]8I        ""        88      a8P "8a,   ,a88   88,     88,  "8a,   ,a8" 88       88 aa    ]8I  
+  `"Y8888Y"'   `"YbbdP"'  88       88  "Y888 88          `"YbbdP"'  88 `"YbbdP"'                  88888888P"   `"YbbdP'Y8   "Y888   "Y888 `"YbbdP"'  88       88 `"YbbdP"'  
+*/
+
+
+.controls {
     display: inline-block;
     margin: 0 auto;
     position:relative;
@@ -140,12 +152,75 @@ h1
     margin-top: -60px;    
 }
 
+
+/*                                                                                                                 
+ ad88888ba                             88                                      88888888ba                          
+d8"     "8b              ,d      ,d    ""                                      88      "8b                         
+Y8,                      88      88                                            88      ,8P                         
+`Y8aaaaa,    ,adPPYba, MM88MMM MM88MMM 88 8b,dPPYba,   ,adPPYb,d8 ,adPPYba,    88aaaaaa8P'  ,adPPYba, 8b,     ,d8  
+  `"""""8b, a8P_____88   88      88    88 88P'   `"8a a8"    `Y88 I8[    ""    88""""""8b, a8"     "8a `Y8, ,8P'   
+        `8b 8PP"""""""   88      88    88 88       88 8b       88  `"Y8ba,     88      `8b 8b       d8   )888(     
+Y8a     a8P "8b,   ,aa   88,     88,   88 88       88 "8a,   ,d88 aa    ]8I    88      a8P "8a,   ,a8" ,d8" "8b,   
+ "Y88888P"   `"Ybbd8"'   "Y888   "Y888 88 88       88  `"YbbdP"Y8 `"YbbdP"'    88888888P"   `"YbbdP"' 8P'     `Y8  
+                                                       aa,    ,88                                                  
+                                                        "Y8bbdP"                                                   
+ */
+
+.settings-box {
+    margin-top: 1em;
+}
+
+.settings-box div {    
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px;
+}
+
+.settings-box div a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    float: right;
+}
+
+.settings-box div a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.settings-box div ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85em;
+}
+
+.settings-box div ul b {
+    font-weight: bold;
+}
+
+.settings-box div ul input{
+    width: 100px;
+}
+
+
+/*                                                                                                                                                                
+  ,ad8888ba,                       88               88888888ba                          
+ d8"'    `"8b                      88               88      "8b                         
+d8'                                88               88      ,8P                         
+88             ,adPPYba,   ,adPPYb,88  ,adPPYba,    88aaaaaa8P'  ,adPPYba, 8b,     ,d8  
+88            a8"     "8a a8"    `Y88 a8P_____88    88""""""8b, a8"     "8a `Y8, ,8P'   
+Y8,           8b       d8 8b       88 8PP"""""""    88      `8b 8b       d8   )888(     
+ Y8a.    .a8P "8a,   ,a8" "8a,   ,d88 "8b,   ,aa    88      a8P "8a,   ,a8" ,d8" "8b,   
+  `"Y8888Y"'   `"YbbdP"'   `"8bbdP"Y8  `"Ybbd8"'    88888888P"   `"YbbdP"' 8P'     `Y8  
+ */
+
 .code-box {
     padding: 2em 0;
 }
 
 .code-box p {
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 pre {
@@ -157,11 +232,6 @@ pre {
     font-family: 'Ubuntu Mono', sans-serif;
 }
 
-code {
-    font-size: 0.6em;
-    line-height: 1em;
-}
-
 pre a {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
@@ -170,6 +240,11 @@ pre a {
 
 pre a:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+code {
+    font-size: 0.6em;
+    line-height: 1em;
 }
 
 footer {
