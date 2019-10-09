@@ -1,5 +1,7 @@
 # colorful-background
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/victorperin/colorful-background.svg)](https://greenkeeper.io/)
+
 A Colorful CSS Gradient Background Generator. 
 [Here is the first preview](http://webcore-it.github.io/colorful-background)
 
